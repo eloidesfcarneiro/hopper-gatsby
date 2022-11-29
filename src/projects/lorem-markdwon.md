@@ -2,6 +2,8 @@
 title: Lorem Markdown
 stack: Markdown
 slug: lorem-markdwon.md
+thumb: ../images/thumbs/medical.png
+featuredImg: ../images/featured/medical.png
 ---
 
 # Sed apte Dryopen quae volutant

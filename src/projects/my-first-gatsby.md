@@ -2,6 +2,8 @@
 title: My First Gatsby
 stack: React Gatsby
 slug: my-first-gatsby.md
+thumb: ../images/thumbs/bird.png
+featuredImg: ../images/featured/bird.png
 ---
 
 # Si quoque vulnere nocebant praeduraque foedera memorque

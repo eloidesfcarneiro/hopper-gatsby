@@ -1,11 +1,23 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { graphql, Link, PageProps } from 'gatsby'
+import { graphql, Link, PageProps , useStaticQuery} from 'gatsby'
+import Img from "gatsby-image"
 
-export default function index({ data }: PageProps) {
+export default function index() {
+  const data = useStaticQuery (graphql `
+  query Banner {
+    file(relativePath: {eq: "icon.png"}) {
+      childImageSharp {
+        fluid {
+         ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+  `)
+
   console.log(data)
 
-  //  const {title, description} = data.site.siteMetadata
   return (
     <Layout>
       <section className="header">
@@ -19,7 +31,7 @@ export default function index({ data }: PageProps) {
           <p>UX - designer & web developer"</p>
           <Link to="/projects">Meu Portfolio</Link>
         </div>
-        <img src="icon.png" style={{ maxWidth: '100%' }}></img>
+        <Img fluid={data.file.childImageSharp.fluid} />
       </section>
       <style jsx> {`
     .header {
@@ -42,3 +54,4 @@ export default function index({ data }: PageProps) {
     </Layout>
   )
 }
+

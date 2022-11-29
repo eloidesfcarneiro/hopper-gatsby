@@ -2,6 +2,8 @@
 title: Hello World
 stack: HTML
 slug: hello-world.md
+thumb: ../images/thumbs/new.png
+featuredImg: ../images/featured/new.png
 ---
 
 # Iubet tuli lacrimis iuxta
