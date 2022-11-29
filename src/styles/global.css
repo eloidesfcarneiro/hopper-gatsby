@@ -56,3 +56,19 @@ footer p{
     color: #bbb;
     margin: 40px auto;
 }
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+
+input {
+    color : black
+}
+
+textarea {
+    color : black
+}

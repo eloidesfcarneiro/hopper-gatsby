@@ -13,7 +13,7 @@ export default function Navbar() {
   const {title: string} = data.site.siteMetadata
   return (
     <nav>
-      <h1>Web Warrior</h1>
+      <h1>Hopper - Projetos</h1>
       <div className='links'>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>

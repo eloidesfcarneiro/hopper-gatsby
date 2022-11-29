@@ -1,6 +1,6 @@
 import type { GatsbyConfig } from "gatsby";
 
-const title = "Portifolio War";
+const title = "Hoppers";
 const pathPrefix = "/";
 
 const config: GatsbyConfig = {
