@@ -1,54 +1,45 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal TypeScript starter
-</h1>
+# Projeto Infnet Gatsby!
+autor: Eloídes F. Carneiro
 
-## 🚀 Quick start
+## Iniciando Projeto Gatsby
 
-1.  **Create a Gatsby site.**
+Criando um app gatsby
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+`npm init gatsby`
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
+## Endereço do Projeto no Git Hub
 
-2.  **Start developing.**
+    http://github.com/eloidesfcarneiro/hopper-gatsby
 
-    Navigate into your new site’s directory and start it up.
+## Endereço Web após Deploy do Projeto 
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+    https://eloidesfcarneiro.github.io/hopper-gatsby/
 
-3.  **Open the code and start customizing!**
+## Adicionando Styles Componentes CSS
 
-    Your site is now running at http://localhost:8000!
+     npm install styled-jsx gatsby-plugin-styled-jsx
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+     npm install --save @types/styled-components
+gatsby-config.js
 
-4.  **Learn more**
+Copygatsby-config.js: adicionar código
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    module.exports  =  {
+      plugins:  [`gatsby-plugin-styled-components`],}
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+## Layout com Graphql
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+Incluso no Layout Graphql com os Dados do Site
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    query SiteInfo {
+    site {
+    siteMetadata {
+    description
+    title
+    }
+    }
+    }`) 
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+## Formulário Contato em About
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+## Mdk em Projetos
