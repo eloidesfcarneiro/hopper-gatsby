@@ -52,16 +52,6 @@ const config: GatsbyConfig = {
     },
     "gatsby-transformer-remark", 
     {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        path: `${__dirname}/src/projects`,
-        extensions: [`.mdx`, `.md`],
-        defaultLayouts: {
-          default: require.resolve("./src/templates/project-details.tsx"),
-        },
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,

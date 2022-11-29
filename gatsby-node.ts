@@ -42,18 +42,3 @@ const createPostPromise = data?.data?.allMarkdownRemark.nodes.frontmatter.map((f
 })
 await Promise.all( [ createPostPromise] )
 }
-
-const result = useStaticQuery (graphql`
-    query {
-      allMdx(filter: { fileAbsolutePath: { regex: "//content/events//" } }) {
-        edges {
-          node {
-            id
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    }
-  `)
